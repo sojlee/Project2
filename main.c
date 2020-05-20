@@ -34,9 +34,7 @@ void filestat1(){
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(){
-    stat("text2", &stat2);
-    printf("size : %d \n", (int)stat2.st_size);
-    printf("size : %d \n", (int)stat2.st_blocks);	
+    stat("text2", &stat2);	
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
