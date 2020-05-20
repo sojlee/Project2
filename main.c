@@ -20,11 +20,11 @@ int main(){
     filestat1();
     filestat2();
     filetime1();
-    filetime2();
-    sizecmp();
-    blockcmp();
-    datecmp();
-    timecmp();
+   // filetime2();
+   // sizecmp();
+   // blockcmp();
+   // datecmp();
+   // timecmp();
 }
 
 //파일 1의 정보를 가져오는 함수 작성
@@ -39,7 +39,10 @@ void filestat2(){
 
 //파일 1의 시간 정보를 가져오는 함수 작성
 void filetime1(){
-    
+	if((time1 = localtime(&stat1.st_mtime)) != NULL)
+		printf("getting time success!\n");
+	else
+		printf("getting time fail\n");
 }
 
 //파일 2의 시간 정보를 가져오는 함수 작성
