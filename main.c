@@ -20,7 +20,7 @@ int main(){
     filestat1();
     filestat2();
     filetime1();
-   // filetime2();
+    filetime2();
    // sizecmp();
    // blockcmp();
    // datecmp();
@@ -40,14 +40,17 @@ void filestat2(){
 //파일 1의 시간 정보를 가져오는 함수 작성
 void filetime1(){
 	if((time1 = localtime(&stat1.st_mtime)) != NULL)
-		printf("getting time success!\n");
+		printf("getting text2's time info success!\n");
 	else
-		printf("getting time fail\n");
+		printf("getting text1's time info fail\n");
 }
 
 //파일 2의 시간 정보를 가져오는 함수 작성
 void filetime2(){
-    
+  	if((time2 = localtime(&stat2.st_mtime)) != NULL)
+		printf("getting text2's time info success!\n");
+	else
+		printf("getting text2's time info fail\n");
 }
 
 //두 개의 파일 크기를 비교하는 함수 작성
