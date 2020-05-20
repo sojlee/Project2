@@ -29,7 +29,9 @@ int main(){
 
 //파일 1의 정보를 가져오는 함수 작성
 void filestat1(){
-    
+    stat("text1", &stat1);
+    printf("size : %d \n", (int)stat1.st_size);
+    printf("size : %d \n", (int)stat1.st_blocks);	
 }
 
 //파일 2의 정보를 가져오는 함수 작성
