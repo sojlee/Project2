@@ -52,9 +52,9 @@ void sizecmp(){
     int file1 = (int)stat1.st_size;
     int file2 = (int)stat2.st_size;
     
-    if(file1 > file2) printf("text1 is bigger.");
-    else if(file1 < file2) printf("text2 is bigger.");
-    else printf("sizes are equal.");
+    if(file1 > file2) printf("text1 is bigger.\n");
+    else if(file1 < file2) printf("text2 is bigger.\n");
+    else printf("sizes are equal.\n");
 }
 
 //두 개의 파일 블락 수를 비교하는 함수 작성
