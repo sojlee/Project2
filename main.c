@@ -26,8 +26,8 @@ int main(){
     filestat2();
     filetime1();
     filetime2();
-   // sizecmp();
-   // blockcmp();
+    sizecmp();
+    blockcmp();
     datecmp();
     timecmp();
 }
